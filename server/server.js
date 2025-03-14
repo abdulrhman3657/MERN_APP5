@@ -1,7 +1,9 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import router from './routes/goalRoutes.js';
+import goalRouter from './routes/goalRoutes.js';
+import userRouter from './routes/userRoutes.js';
 import { connectDB } from './config/db.js';
+
 
 dotenv.config();
 
@@ -11,7 +13,8 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/api/goals', router);
+app.use('/api/goals', goalRouter)
+app.use('/api/users', userRouter);
 
 app.listen(PORT, () => {
     console.log(`running on port: ${PORT}`);
