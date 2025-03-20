@@ -1,6 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import goalService from './goalService';
-import { act } from 'react';
 
 
 const initialState = {
