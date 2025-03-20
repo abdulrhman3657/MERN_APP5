@@ -7,7 +7,7 @@ import protect from '../middleware/authMiddleware.js';
 
 const userRouter = express.Router();
 
-// register new user
+// register new user, add asyncHandler?
 userRouter.post('/', async (req, res) => {
     try {
         
