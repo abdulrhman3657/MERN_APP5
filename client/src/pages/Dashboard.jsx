@@ -29,7 +29,7 @@ function Dashboard() {
       dispatch(reset());
     }
 
-  }, [user, navigte, isError, message, dispatch])
+  }, [user, navigte])
 
   return (
     <>
